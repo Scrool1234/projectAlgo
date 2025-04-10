@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Change money</title>
+</head>
+<body>
+<div class = "container">
+    <form class = "form" th:action = "@{/result}" method="post">
+        <h3>Размен монет</h3>
+        <p>Введите сумму, которую необходимо разменять</p>
+        <input type = "text" name = "amount">
+        <br>
+        <p>Укажите список монет, которые могут использоваться при размене</p>
+        <textarea class = "form_textarea" placeholder="[7,22,42]" rows = "4" name = "change_cones"></textarea>
+        <br>
+        <button type = "submit">Разменять</button>
+    </form>
+</div>
+</body>
+</html>
